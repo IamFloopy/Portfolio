@@ -1,0 +1,130 @@
+.paralex {
+    background:rgb(23, 53, 42);
+}
+header {
+    position:absolute;
+    width: 84%;
+    padding: 2rem 9.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    font-weight: 450;
+}
+
+header .logo {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li {
+    list-style: none;
+    margin-left: 3rem;
+}
+header ul li a {
+    text-decoration: none;
+    padding: 0.7rem 1rem;
+    color: white;
+    border-radius: 1.3rem;
+}
+header ul li a:hover, header ul li a.active {
+    background: white;
+    color: rgb(65, 118, 168);
+}
+.section {
+    position: relative;
+    width: 100%;
+    height: 88vh;
+    padding: 6.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.section::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 6.6rem;
+    background: linear-gradient(to top, rgb(23, 53, 42), transparent);
+    z-index: 1000;
+}
+section img {
+    position: absolute;
+    top: 0;
+    left: -3rem;
+    width: 93%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+#portfolio-title {
+    position: absolute;
+    color: white;
+    white-space: nowrap;
+    font-size: 8.5vh;
+    margin-top: -16vh;
+    margin-left: -22.5vh;
+    z-index: 10;
+}
+
+#tree {
+    z-index: 11;
+}
+
+#btn {
+    text-decoration: none;
+    padding: 0.75rem 2.2rem;
+    border-radius: 40px;
+    background-color: white;
+    color: rgb(30, 66, 45);
+    font-size: 1.5em;
+    margin-top: 10rem;
+    margin-left: -28vh;
+    z-index: 9;
+}
+
+@media only screen and (max-width: 768px) {
+    .section {
+        height: 73vh;
+    }
+    .section img {
+        margin-left: -12rem;
+        width: 142%;
+        height: 100%;
+    }
+    header .logo {
+        font-size: 1.3rem;
+        margin-right: 1.6rem;
+    }
+    header {
+        transform: scale(0.9);
+        width: 83%;
+        padding: 2rem 1.4rem;
+    }
+    header ul li {
+        margin-left: 0.4rem;
+    }
+    #portfolio-title {
+        margin-top: -23vh;
+        margin-left: -31vh;
+        font-size: 4.5vh;
+    }
+    #btn {
+        margin-top: 11rem;
+        margin-left: -30.5vh;
+    }
+    .paralex{
+        overflow-x: hidden;
+    }
+}
